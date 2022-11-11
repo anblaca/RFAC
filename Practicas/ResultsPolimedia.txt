@@ -1,0 +1,44 @@
+----------------
+default
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l1, solver = liblinear
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l1, solver = saga noconverge
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty elasticnet, solver = saga
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l2, solver = sag
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l2, solver = lbfgs
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l2, solver = lbfgs C = 0.1
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l2, solver = lbfgs, C = 0.01
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+----------------
+penalty l2, solver = lbfgs, C = 2
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+
+----------------
+penalty l2, solver = lbfgs, class_weight = None
+Dev AUC: 90.5%
+Dev CER: 6.73% [6.47, 7.00]
+
+
+COGEMOS DEFAULT

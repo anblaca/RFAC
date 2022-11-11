@@ -1,0 +1,63 @@
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l1, solver = liblinear
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l1, solver = saga
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty elasticnet, solver = saga, l1_ratio = 0.5
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty elasticnet, solver = saga, l1_ratio = 0.7
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty elasticnet, solver = saga, l1_ratio = 0.2
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = newton-cg
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = newton-cg
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = newton-cg
+Dev AUC: 86.6%
+Dev CER: 9.47% [9.22, 9.73]
+----------------
+penalty l2, solver = newton-cg
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = newton-cg, C = 0.001
+Dev AUC: 86.8%
+Dev CER: 8.99% [8.75, 9.24]
+----------------
+penalty l2, solver = newton-cg, tol = 1e-2
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = lbfgs, tol = 1e-2
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = lbfgs, tol = 1e-1
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+----------------
+penalty l2, solver = lbfgs, tol = 1e-7
+Dev AUC: 86.8%
+Dev CER: 9.00% [8.75, 9.25]
+
+ESCOGEMOS ESTE QUE NOS DA MENOS ERROR
+penalty l2, solver = newton-cg, C = 0.001
+Dev AUC: 86.8%
+Dev CER: 8.99% [8.75, 9.24]
