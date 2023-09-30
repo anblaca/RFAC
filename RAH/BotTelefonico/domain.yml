@@ -1,0 +1,100 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedirse
+  - confirmar
+  - denegar
+  - interes
+  - dudaTiempo
+  - informacionOferta
+  - darseBaja
+  - esperarfeedback
+  - seleccionOferta
+  - informacionOfertas
+  - seleccionInteresOferta
+  - confirmarOferta
+  - ayuda
+
+entities:
+  - oferta
+  - tiempo
+  - mejoraP
+  - feedback
+  - ofertas
+  - seleccionoferta
+
+slots:
+  ofertas:
+    type: text
+    initial_value: null
+    mappings:
+    - type: from_entity
+      entity: oferta
+    - type: from_entity
+      entity: tiempo
+    - type: from_entity
+      entity: mejoraP
+    - type: from_entity
+      entity: feedback
+    - type: from_entity
+      entity: ofertas
+    - type: from_entity
+      entity: seleccionoferta
+
+responses:
+  utter_saludo:
+  - text: "Hola, soy un bot creado para un trabajo académico de reconocimiento del habla, mi función es la de mostrar diversas ofertas para la empresa telefónica que me ha creado
+  donde las ofertas que se muestran van variando sobre el tiempo además de darle de baja o asignarle, si necesita ayuda sobre mis funciones, por favor escriba la palabra ayuda. Muchas gracias y bienvenido a TimoEstar"
+  
+  utter_confirmarOferta:
+  - text: "Perfecto, La oferta le ha sido asignada correctamente."
+
+  utter_darseBaja:
+  - text: "Antes de darle de baja, le gustaría que mejorarámos sus prestaciones actuales?"
+
+  utter_despedirse:
+  - text: "Ha sido un placer ayudarle, vuelva cuando necesite."
+
+  utter_confirmar:
+  - text: "Perfecto, muchas gracias la oferta ha sido mejorada."
+  
+  utter_denegar:
+  - text: "Sin problema, la oferta ha sido descartada correctamente."
+
+  utter_interes:
+  - text: "Perfecto, diga en cual está usted interesado o escriba: ofertas para que se muestren las diferentes ofertas que hay en catálogo."
+  
+  utter_ayuda:
+  - text: "Hola, soy el asistente de ayuda, mi intención es explicarle más sobre mi y que funciones puedo realizar. Mi nombre es TimoBot, pertenezco a TimoEstar, estoy creado para tener una charla conversacional
+  con usted con la intención de dejarle claro que tipo de ofertas tenemos y poder darle de baja, o de alta sobre las ofertas que manejamos. Pido perdón por si a veces no te entiendo ya que 
+  no estoy entrenado con muchos datos y tienes que ser preciso en las contestaciones. Muchas gracias por todo. A continuación te muestro mis funcionalidades:
+  - saludo
+  - despedirse
+  - confirmar
+  - denegar
+  - interes
+  - dudaTiempo
+  - informacionOferta
+  - darseBaja
+  - seleccionOferta
+  - informacionOfertas
+  - seleccionInteresOferta
+  - confirmarOferta
+  - ayuda"
+
+
+actions:
+  - ActionPromociones
+  - ActionDuracion
+  - ActionMejora
+  - ActionFeedBack
+  - ActionInteresado
+  - ActionMostrarOfertas
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+config:
+  store_entities_as_slots: true

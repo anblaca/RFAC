@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-oferta",
+      "2": "I-oferta",
+      "3": "L-oferta",
+      "4": "U-oferta",
+      "5": "B-tiempo",
+      "6": "I-tiempo",
+      "7": "L-tiempo",
+      "8": "U-tiempo",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-oferta": 1,
+      "I-oferta": 2,
+      "L-oferta": 3,
+      "U-oferta": 4,
+      "B-tiempo": 5,
+      "I-tiempo": 6,
+      "L-tiempo": 7,
+      "U-tiempo": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

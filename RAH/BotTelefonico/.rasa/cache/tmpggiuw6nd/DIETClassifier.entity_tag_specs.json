@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-mejoraP",
+      "2": "I-mejoraP",
+      "3": "L-mejoraP",
+      "4": "U-mejoraP",
+      "5": "B-oferta",
+      "6": "I-oferta",
+      "7": "L-oferta",
+      "8": "U-oferta",
+      "9": "B-seleccionoferta",
+      "10": "I-seleccionoferta",
+      "11": "L-seleccionoferta",
+      "12": "U-seleccionoferta",
+      "13": "B-tiempo",
+      "14": "I-tiempo",
+      "15": "L-tiempo",
+      "16": "U-tiempo",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-mejoraP": 1,
+      "I-mejoraP": 2,
+      "L-mejoraP": 3,
+      "U-mejoraP": 4,
+      "B-oferta": 5,
+      "I-oferta": 6,
+      "L-oferta": 7,
+      "U-oferta": 8,
+      "B-seleccionoferta": 9,
+      "I-seleccionoferta": 10,
+      "L-seleccionoferta": 11,
+      "U-seleccionoferta": 12,
+      "B-tiempo": 13,
+      "I-tiempo": 14,
+      "L-tiempo": 15,
+      "U-tiempo": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

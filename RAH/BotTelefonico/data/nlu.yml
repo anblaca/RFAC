@@ -1,0 +1,272 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hey
+    - hola
+    - que tal
+    - que tal
+    - buenos dias
+    - buenas noches
+    - buenas tardes
+    - hey there
+    - como estas?
+    - Hola, ¿que tal?
+    - hola, que tal?
+    - buenas
+
+- intent: despedirse
+  examples: |
+    - adeu
+    - agur
+    - bye
+    - adios
+    - que tengas buenas noches
+    - adiós
+    - que tengas un buen dia
+    - nos vemos
+    - hasta la vista
+    - hasta luego
+
+- intent: confirmar
+  examples: |
+    - confirmar
+    - CONFIRMAR
+
+- intent: confirmarOferta
+  examples: |
+    - esa es la oferta que quiero
+    - correcto
+    - claro
+    - tiene buena pinta
+    - me parece bien
+    - me gusta la idea
+    - estoy de acuerdo
+    - de acuerdo
+    - aceptar
+    - ACEPTAR
+    - la quiero
+
+- intent: denegar
+  examples: |
+    - rechazar
+    - RECHAZAR
+    - DENEGAR
+    - denegar
+    - denegado
+    - deniego
+    - rechazo
+
+- intent: interes
+  examples: |
+    - estoy interesado en una oferta
+    - me gustaria saber de que teneis oferta
+    - me gustaria interesarme por una oferta
+    - estoy interesado en una promoción
+    - me gustaria saber de que teneis promoción
+    - me gustaria interesarme por una promoción
+    - la promoción que he visto en el anuncio del teléfono
+    - estoy interesado
+    - me gustaría saber de que tenéis oferta
+    - me gustaríaa interesarme por una oferta
+    - estoy interesado en una promocion
+    - me gustaría saber de que tenéis promoción
+    - me gustaria saber de que teneis promocion
+    - la promocion que he visto en el anuncio del telefono
+    - estoy interesado
+
+- intent: darseBaja
+  examples: |
+    - he pensado que quiero darme de baja
+    - hola, estoy interesado en darme de baja
+    - No quiero seguir con esta oferta
+    - quiero que se me retire la oferta
+    - por favor, que me gustaría darme de baja
+    - no tengo interés en seguir de alta
+    - no quiero estar más de alta
+    - me gustaria darme de baja
+    - no quiero continuar con el alta
+    - quiero darme de baja
+
+- intent: ayuda
+  examples: |
+    - necesito ayuda
+    - ayuda
+    - como funciona la aplicación?
+    - estoy perdido
+    - no se como funciona
+    - ayúdame por favor
+    - AYUDA
+    - ayudame
+    - help
+    - HELP
+
+- intent: esperarfeedback
+  examples: |
+    - [no]{"entity": "feedback", "value": "no"}, me quiero dar de baja
+    - [no]{"entity": "feedback", "value": "no"}, no estoy interesado 
+    - [no]{"entity": "feedback", "value": "no"}, no quiero 
+    - [no]{"entity": "feedback", "value": "no"} quiero escuchar nada 
+    - [no]{"entity": "feedback", "value": "no"}
+    - [no]{"entity": "feedback", "value": "no"}, gracias
+    - que tipo de [mejora]{"entity": "feedback", "value": "si"} me harías? 
+    - cual es la [mejora]{"entity": "feedback", "value": "si"} que propones?
+    - en que [consiste]{"entity": "feedback", "value": "si"}? 
+    - de que se [trata]{"entity": "feedback", "value": "si"}? 
+    - sobre que [trata]{"entity": "feedback", "value": "si"}?
+    - [si]{"entity": "feedback", "value": "si"}
+    - estoy [interesado]{"entity": "feedback", "value": "si"}
+    - [si]{"entity": "feedback", "value": "si"}, estoy interesado 
+
+
+- intent: seleccionOferta
+  examples: |
+    - la oferta que yo tengo es la de [BlackFriday]{"entity": "mejoraP", "value": "BlackFriday"}
+    - la oferta que yo tengo es la de [pasion]{"entity": "mejoraP", "value": "Pasion"}
+    - la oferta que yo tengo es la de [fusion plus]{"entity": "mejoraP", "value": "FusionPlus"}
+    - la oferta que yo tengo es la de [Verano]{"entity": "mejoraP", "value": "Verano"}
+    - diría que es la de [BlackFriday]{"entity": "mejoraP", "value": "BlackFriday"}
+    - diría que es la de [pasion]{"entity": "mejoraP", "value": "Pasion"}
+    - diría que es la de [fusion plus]{"entity": "mejoraP", "value": "FusionPlus"}
+    - diría que es la de [Verano]{"entity": "mejoraP", "value": "Verano"}
+    - [BlackFriday]{"entity": "mejoraP", "value": "BlackFriday"}
+    - [pasion]{"entity": "mejoraP", "value": "Pasion"}
+    - [fusion plus]{"entity": "mejoraP", "value": "FusionPlus"}
+    - [Verano]{"entity": "mejoraP", "value": "Verano"}
+    - mi oferta es [fusion plus]{"entity": "mejoraP", "value": "FusionPlus"}
+    - mi oferta es [pasion]{"entity": "mejoraP", "value": "Pasion"}
+    - mi oferta es [BlackFriday]{"entity": "mejoraP", "value": "BlackFriday"}
+    - mi oferta es [Verano]{"entity": "mejoraP", "value": "Verano"}
+    - tengo la de [fusion plus]{"entity": "mejoraP", "value": "FusionPlus"}
+    - tengo la de [pasion]{"entity": "mejoraP", "value": "Pasion"}
+    - tengo la de [BlackFriday]{"entity": "mejoraP", "value": "BlackFriday"}
+    - tengo la de [Verano]{"entity": "mejoraP", "value": "Verano"}
+
+- intent: dudaTiempo
+  examples: |
+    - hasta cuando estara la oferta del [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"}?
+    - la promocion del [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"} sigue en activo?
+    - es la promocion del [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"} valida todavia?
+    - la oferta del [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"} hasta cuando dura?
+    - hasta cuando estara la oferta del [black friday]{"entity": "tiempo", "value": "BlackFriday"}?
+    - la promocion del [black friday]{"entity": "tiempo", "value": "BlackFriday"} sigue en activo?
+    - es la promocion del [black friday]{"entity": "tiempo", "value": "BlackFriday"} valida todavia?
+    - la oferta del [black friday]{"entity": "tiempo", "value": "BlackFriday"} hasta cuando dura?
+    - hasta cuando estara la oferta del [blas friday]{"entity": "tiempo", "value": "BlackFriday"}?
+    - la promocion del [blas friday]{"entity": "tiempo", "value": "BlackFriday"} sigue en activo?
+    - es la promocion del [blas friday]{"entity": "tiempo", "value": "BlackFriday"} valida todavia?
+    - la oferta del [blas friday]{"entity": "tiempo", "value": "BlackFriday"} hasta cuando dura?
+    - hasta cuando estara la oferta de la [pasion]{"entity": "tiempo", "value": "Pasion"}?
+    - la promocion de la [pasion]{"entity": "tiempo", "value": "Pasion"} sigue en activo?
+    - es la promocion de la [pasion]{"entity": "tiempo", "value": "Pasion"} valida todavia?
+    - la oferta de la [pasion]{"entity": "tiempo", "value": "Pasion"} hasta cuando dura?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"}?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [fusion plus]{"entity": "tiempo", "value": "FusionPlus"}?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [pasion]{"entity": "tiempo", "value": "Pasion"}?
+    - que hace falta para la oferta de [BlackFriday]{"entity": "tiempo", "value": "BlackFriday"}?
+    - que hace falta para la oferta de [fusion plus]{"entity": "tiempo", "value": "FusionPlus"}?
+    - que hace falta para la oferta de [pasion]{"entity": "tiempo", "value": "Pasion"}?
+    - hasta cuando estara la oferta de la [+]{"entity": "tiempo", "value": "FusionPlus"}?
+    - la promocion de la [fusion plus]{"entity": "tiempo", "value": "FusionPlus"} sigue en activo?
+    - es la promocion de la [fusion plus]{"entity": "tiempo", "value": "FusionPlus"} valida todavia?
+    - la oferta de [fusion plush]{"entity": "tiempo", "value": "FusionPlus"} hasta cuando dura?
+    - hasta cuando estara la oferta del [Verano]{"entity": "tiempo", "value": "Verano"}?
+    - la promocion del [Verano]{"entity": "tiempo", "value": "Verano"} sigue en activo?
+    - es la promocion del [Verano]{"entity": "tiempo", "value": "Verano"} valida todavia?
+    - la oferta del [Verano]{"entity": "tiempo", "value": "Verano"} hasta cuando dura?
+    - hasta cuando estara la oferta del [fusion plus]{"entity": "tiempo", "value": "FusionPlus"}?
+    - la promocion del [black friday]{"entity": "tiempo", "value": "BlackFriday"} sigue en activo?
+    - es la promocion del [FusionPlus]{"entity": "tiempo", "value": "FusionPlus"} valida todavia?
+    - la oferta del [FusionPlus]{"entity": "tiempo", "value": "FusionPlus"} hasta cuando dura?
+    - hasta cuando estara la oferta del [FusionPlus]{"entity": "tiempo", "value": "FusionPlus"}?
+    - la promocion del [FusionPlus]{"entity": "tiempo", "value": "FusionPlus"} sigue en activo?
+    - es la promocion del [Pasion]{"entity": "tiempo", "value": "Pasion"} valida todavia?
+    - la oferta del [Pasion]{"entity": "tiempo", "value": "Pasion"} hasta cuando dura?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [Verano]{"entity": "tiempo", "value": "Verano"}?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [fusion plus]{"entity": "tiempo", "value": "FusionPlus"}?
+    - cuanto tiempo tengo que estar para tener acceso a la rebaja de [pasion]{"entity": "tiempo", "value": "Pasion"}?
+
+
+- intent: informacionOfertas
+  examples: |
+    - quiero saber las [ofertas]{"entity": "ofertas"} que tenéis 
+    - que [ofertas]{"entity": "ofertas"} tenéis 
+    - cuales son vuestras [ofertas]{"entity": "ofertas"}
+    - que tipo de [ofertas]{"entity": "ofertas"} teneis 
+    - me podrías decir la de [ofertas]{"entity": "ofertas"} que tenéis 
+    - [ofertas]{"entity": "ofertas"}
+    - [oferta]{"entity": "ofertas"}
+
+- intent: seleccionInteresOferta
+  examples: |
+    - la del [BlackFriday]{"entity": "seleccionoferta", "value": "BlackFriday"}
+    - la del [fusion plus]{"entity": "seleccionoferta", "value": "FusionPlus"}
+    - la de la [pasion]{"entity": "seleccionoferta", "value": "Pasion"}
+    - la de [verano]{"entity": "seleccionoferta", "value": "Verano"}
+    - quiero la de la [BlackFriday]{"entity": "seleccionoferta", "value": "BlackFriday"}
+    - quiero la de la [fusion plus]{"entity": "seleccionoferta", "value": "FusionPlus"}
+    - quiero la de la [pasion]{"entity": "seleccionoferta", "value": "Pasion"}
+    - quiero la de la [pasion]{"entity": "seleccionoferta", "value": "Pasion"}
+    - quiero la de la [Verano]{"entity": "seleccionoferta", "value": "Verano"}
+    - estoy interesado en [BlackFriday]{"entity": "seleccionoferta", "value": "BlackFriday"}
+    - estoy interesado en [pasion]{"entity": "seleccionoferta", "value": "Pasion"}
+    - estoy interesado en [fusion plus]{"entity": "seleccionoferta", "value": "FusionPlus"}
+    - estoy interesado en [Verano]{"entity": "seleccionoferta", "value": "Verano"}
+    - quiero la de la [fusion plus]{"entity": "seleccionoferta", "value": "FusionPlus"}
+    - quiero la de la [BlackFriday]{"entity": "seleccionoferta", "value": "BlackFriday"}
+    - quiero la de la [pasion]{"entity": "seleccionoferta", "value": "Pasion"}
+    - quiero la de la [Verano]{"entity": "seleccionoferta", "value": "Verano"}
+    - he pensado que la oferta [pasion]{"entity": "seleccionoferta", "value": "Pasion"} es la que más me interesa
+    - he pensado que la oferta [BlackFriday]{"entity": "seleccionoferta", "value": "BlackFriday"} es la que más me interesa
+    - he pensado que la oferta [fusion plus]{"entity": "seleccionoferta", "value": "fusion plus"} es la que más me interesa
+    - he pensado que la oferta [Verano]{"entity": "seleccionoferta", "value": "Verano"} es la que más me interesa
+
+- intent: informacionOferta
+  examples: |
+    - que contiene la oferta del [BlackFriday]{"entity": "oferta", "value": "BlackFriday"}?
+    - que contiene la oferta del [fusion plus]{"entity": "oferta", "value": "FusionPlus"}?
+    - que contiene la oferta de la [pasion]{"entity": "oferta", "value": "Pasion"}?
+    - cuales son las caracteristicas de la [pasion]{"entity": "oferta", "value": "Pasion"}?
+    - cuales son las caracteristicas de la [fusion plus]{"entity": "oferta", "value": "FusionPlus"}?
+    - me podria indicar que contiene la oferta del [BlackFriday]{"entity": "oferta", "value": "BlackFriday"}?
+    - me podria indicar que contiene la oferta del [fusion plus]{"entity": "oferta", "value": "FusionPlus"}?
+    - me podria indicar que contiene la oferta del [pasion]{"entity": "oferta", "value": "Pasion"}?
+    - seria tan amable de decirme la oferta [BlackFriday]{"entity": "oferta", "value": "BlackFriday"} que contiene?
+    - seria tan amable de decirme la oferta [fusion plus]{"entity": "oferta", "value": "FusionPlus"} que contiene?
+    - seria tan amable de decirme la oferta [pasion]{"entity": "oferta", "value": "Pasion"} que contiene?
+    - seria tan amable de decirme la oferta [Verano]{"entity": "oferta", "value": "Verano"} que contiene?
+    - me podria indicar que contiene la oferta del [Verano]{"entity": "oferta", "value": "Verano"}?
+    - que contiene la oferta de la [Verano]{"entity": "oferta", "value": "Verano"}?
+    - que lleva la oferta de la [pasion]{"entity": "oferta", "value": "Pasion"}?
+    - que lleva la oferta de la [Verano]{"entity": "oferta", "value": "Verano"}?
+    - que lleva la oferta de la [fusion plus]{"entity": "oferta", "value": "FusionPlus"}?
+    - que lleva la oferta de la [BlackFriday]{"entity": "oferta", "value": "BlackFriday"}?
+    - quiero información sobre la oferta [Verano]{"entity": "oferta", "value": "Verano"}?
+    - quiero información sobre la oferta [fusion plus]{"entity": "oferta", "value": "FusionPlus"}?
+    - quiero información sobre la oferta [pasion]{"entity": "oferta", "value": "Pasion"}?
+    - quiero información sobre la oferta [BlackFriday]{"entity": "oferta", "value": "BlackFriday"}?
+
+- synonym: Pasion
+  examples: |
+    - pasion
+    - sentimiento
+
+- synonym: FusionPlus
+  examples: |
+    - Fusion
+    - fusion
+    - plus
+    - + 
+    
+- synonym: BlackFriday
+  examples: |
+    - black friday
+    - viernes negro
+    - blas friday
+    - blackfriday
+
+- synonym: Verano
+  examples: |
+    - estiu
+    - verano

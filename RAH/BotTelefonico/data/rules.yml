@@ -1,0 +1,78 @@
+version: "3.1"
+
+rules:
+
+- rule: saludar
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+
+- rule: despedirse
+  steps:
+  - intent: despedirse
+  - action: utter_despedirse
+
+- rule: denegado
+  steps:
+  - intent: denegar
+  - action: utter_denegar
+
+- rule: mostrar interes
+  steps:
+  - intent: interes
+  - action: utter_interes
+
+- rule: mostrar ofertas
+  steps:
+  - intent: informacionOfertas
+  - action: ActionMostrarOfertas
+
+- rule: seleccion de oferta
+  steps:
+  - intent: seleccionInteresOferta
+  - action: ActionInteresado
+
+- rule: seleccion de oferta final
+  steps:
+  - intent: confirmarOferta
+  - action: utter_confirmarOferta
+
+- rule: pregunta del tiempo
+  steps:
+  - intent: dudaTiempo
+  - action: ActionDuracion
+
+- rule: informacion ofertas
+  steps:
+  - intent: informacionOferta
+  - action: ActionPromociones
+
+- rule: darse de baja
+  steps:
+  - intent: darseBaja
+  - action: utter_darseBaja
+
+- rule: si que se lo piensa 
+  steps:
+  - intent: esperarfeedback
+  - action: ActionFeedBack
+
+- rule: confirmar mejora
+  steps:
+  - intent: confirmar
+  - action: utter_confirmar
+
+- rule: denegar mejora
+  steps:
+  - intent: denegar
+  - action: utter_denegar
+
+- rule: mejorar la oferta actual
+  steps:
+  - intent: seleccionOferta
+  - action: ActionMejora
+
+- rule: regla sobre la ayuda
+  steps:
+  - intent: ayuda
+  - action: utter_ayuda

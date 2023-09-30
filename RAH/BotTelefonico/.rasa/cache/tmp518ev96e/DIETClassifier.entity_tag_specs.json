@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-mejoraP",
+      "2": "I-mejoraP",
+      "3": "L-mejoraP",
+      "4": "U-mejoraP",
+      "5": "B-oferta",
+      "6": "I-oferta",
+      "7": "L-oferta",
+      "8": "U-oferta",
+      "9": "B-tiempo",
+      "10": "I-tiempo",
+      "11": "L-tiempo",
+      "12": "U-tiempo",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-mejoraP": 1,
+      "I-mejoraP": 2,
+      "L-mejoraP": 3,
+      "U-mejoraP": 4,
+      "B-oferta": 5,
+      "I-oferta": 6,
+      "L-oferta": 7,
+      "U-oferta": 8,
+      "B-tiempo": 9,
+      "I-tiempo": 10,
+      "L-tiempo": 11,
+      "U-tiempo": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
